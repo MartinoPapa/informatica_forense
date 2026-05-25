@@ -149,9 +149,8 @@
   \vfill
 
   {\normalsize\color{legalegray}
-    Documento predisposto per la presentazione in aula\\[0.3em]
-    nell'ambito del corso di \textbf{Informatica Forense}\\[1em]
-    \textit{Durata prevista: 10 minuti}}
+    \textbf{Informatica Forense}\\[1em]
+    \textit{Martino Papa, Alessio Minati}}
 
   \vspace{1.5cm}
 
@@ -168,16 +167,14 @@
 \label{sec:intro}
 
 L'era digitale ha radicalmente mutato le modalità con cui soggetti pubblici e
-privati entrano in contatto con i propri utenti. L'utilizzo di \emph{form} online ---
-ossia di moduli web strutturati per la raccolta di informazioni --- è divenuto
-prassi ordinaria in ogni settore: dall'e-commerce alla sanità, dalla pubblica
-amministrazione all'istruzione. Tali strumenti consentono di acquisire, con
+privati entrano in contatto con i propri utenti. L'utilizzo di \emph{form} online 
+(ossia di moduli web strutturati per la raccolta di informazioni) è diventato
+prassi ordinaria in ogni settore. Tali strumenti consentono di acquisire, con
 semplicità e a costo pressoché nullo, una mole considerevole di dati personali.
 
 Proprio questa facilità di accesso ai dati costituisce, tuttavia, il principale
-fattore di rischio. Come acutamente osservato dalla dottrina, la straordinaria
-importanza dei dati personali nell'epoca attuale risiede nel fatto che
-\textquote{essi veicolano la nostra immagine nella rete}; il diritto alla protezione
+fattore di rischio. L'importanza dei dati personali nell'epoca attuale risiede nel fatto che
+essi veicolano la nostra immagine nella rete; il diritto alla protezione
 dei dati personali si configura pertanto non soltanto come espressione del
 diritto alla riservatezza, ma anche come vera e propria espressione
 del \emph{diritto all'autodeterminazione informativa}
@@ -185,9 +182,9 @@ del \emph{diritto all'autodeterminazione informativa}
 
 Quando il \emph{form} online viene predisposto in assenza di un'adeguata base
 giuridica, senza un'informativa chiara, senza la distinzione tra dati ordinari e
-dati particolari (c.d. \emph{sensibili}), oppure in violazione dei principi tecnici
-di sicurezza, si realizzano le condizioni per una pluralità di illeciti --- tanto
-amministrativi quanto penali --- che saranno esaminati nel presente documento.
+dati particolari (ovvero dati \emph{sensibili}), oppure in violazione dei principi tecnici
+di sicurezza, si realizzano le condizioni per una pluralità di illeciti, tanto
+amministrativi quanto penali, che saranno esaminati nel presente documento.
 
 La disciplina di riferimento è costituita principalmente dal Regolamento
 (UE) 2016/679 (\emph{General Data Protection Regulation}, d'ora in poi GDPR)
@@ -210,8 +207,8 @@ salvaguardia dei Diritti dell'Uomo e delle Libertà Fondamentali (CEDU)
 \label{sub:dati}
 
 Preliminare a ogni valutazione giuridica è la corretta qualificazione del tipo
-di dato raccolto tramite il \emph{form}. L'art.~4, n.~1 del GDPR definisce dato
-personale \textquote{qualsiasi informazione riguardante una persona fisica
+di dato raccolto tramite il \emph{form}. L'art.~4, n.~1 del GDPR definisce \textbf{dato
+personale} \textquote{qualsiasi informazione riguardante una persona fisica
 identificata o identificabile}.
 
 Il legislatore europeo distingue poi una categoria di dati che richiedono una
@@ -223,17 +220,17 @@ categoria:
   \item dati che rivelano l'origine razziale o etnica;
   \item dati relativi alle opinioni politiche, alle convinzioni religiose o filosofiche;
   \item dati relativi all'appartenenza sindacale;
-  \item \textbf{dati genetici} e \textbf{dati biometrici} (se diretti a identificare
+  \item dati genetici e dati biometrici (se diretti a identificare
         univocamente una persona);
-  \item dati relativi alla \textbf{salute};
-  \item dati relativi alla \textbf{vita sessuale} o all'orientamento sessuale.
+  \item dati relativi alla salute;
+  \item dati relativi alla vita sessuale o all'orientamento sessuale.
 \end{itemize}
 
 L'art.~9, par.~1 GDPR stabilisce un divieto generale di trattamento di tali
 dati, salve le eccezioni tassativamente elencate al par.~2 (consenso esplicito,
 obblighi di diritto del lavoro, interessi vitali, ecc.). Ciò implica che un
 \emph{form} web che, anche solo facoltativamente, contenga campi relativi a
-dati particolari senza un'esplicita base giuridica ex art.~9 par.~2 è da
+dati particolari senza un'esplicita base giuridica ai sensi dell'art.~9 par.~2 è da
 considerarsi già, di per sé, in violazione del Regolamento.
 
 \begin{normabox}[Art.~9 GDPR -- Trattamento di categorie particolari di dati personali (sintesi)]
@@ -246,7 +243,7 @@ considerarsi già, di per sé, in violazione del Regolamento.
   \textbf{Par. 2}: Il divieto non si applica nei casi ivi tassativamente previsti,
   tra cui il \emph{consenso esplicito} dell'interessato (lett.~a).
   \newline
-  \textit{Fonte: Regolamento (UE) 2016/679, art.~9 \autocite{gdpr2016}.}
+  {\scriptsize \textit{Fonte: Regolamento (UE) 2016/679, art.~9 \autocite{gdpr2016}.}}
 \end{normabox}
 
 \subsection{Il profilo civilistico}
@@ -255,8 +252,9 @@ considerarsi già, di per sé, in violazione del Regolamento.
 \subsubsection{I principi del GDPR applicabili alla raccolta tramite form}
 \label{subsub:principi}
 
-L'art.~5 GDPR enuncia i principi fondamentali del trattamento, applicabili
-in via diretta alla predisposizione di qualsiasi \emph{form} online. In particolare:
+L'art. 5 del GDPR definisce i principi essenziali per il trattamento dei dati, 
+che devono essere rispettati sin dalla fase di creazione di qualsiasi \emph{form} online.
+In particolare:
 
 \begin{enumerate}[label=\alph*), leftmargin=1.5cm]
   \item \textbf{Liceità, correttezza e trasparenza} (art.~5, par.~1, lett.~a):
@@ -277,6 +275,11 @@ in via diretta alla predisposizione di qualsiasi \emph{form} online. In particol
         adottare misure ragionevoli per garantire la correttezza dei dati
         raccolti;
 
+  \item \textbf{Limitazione della conservazione} (art.~5, par.~1, lett.~e):
+        i dati devono essere conservati in una forma che consenta l'identificazione
+        degli interessati per un periodo non superiore al conseguimento delle
+        finalità per le quali sono trattati;
+
   \item \textbf{Integrità e riservatezza} (art.~5, par.~1, lett.~f):
         il \emph{form} deve essere tecnicamente protetto, con connessione
         cifrata (protocollo HTTPS/TLS) e misure di sicurezza adeguate.
@@ -291,15 +294,17 @@ concisa, trasparente e intellegibile. Un \emph{form} online sprovvisto di
 informativa, oppure che rimandi a un testo generico e incomprensibile, è in
 violazione di tale obbligo.
 
-Qualora la base giuridica prescelta sia il \textbf{consenso} (art.~6,
-par.~1, lett.~a), l'art.~7 GDPR richiede che esso sia:
+Qualora la raccolta dei dati si basi sul \textbf{consenso} dell'utente, non essendo strettamente 
+obbligatoria per altri motivi (art.~6, par.~1, lett.~a), 
+l'art.~7 del GDPR stabilisce che tale consenso debba essere:
+
 \begin{itemize}[leftmargin=1.5cm]
-  \item \emph{libero}: l'accesso al servizio non deve essere condizionato alla
+  \item \textbf{libero}: l'accesso al servizio non deve essere condizionato alla
         prestazione del consenso per finalità non necessarie;
-  \item \emph{specifico}: un unico checkbox che raggruppi più finalità non
+  \item \textbf{specifico}: un unico checkbox che raggruppi più finalità non
         soddisfa il requisito;
-  \item \emph{informato}: deve riferirsi a un'informativa adeguata;
-  \item \emph{inequivocabile}: le caselle pre-spuntate (\emph{pre-ticked boxes})
+  \item \textbf{informato}: deve riferirsi a un'informativa adeguata;
+  \item \textbf{inequivocabile}: le caselle pre-spuntate (\emph{pre-ticked boxes})
         non integrano un consenso valido.
 \end{itemize}
 
@@ -313,12 +318,6 @@ trattamento. Il titolare è esonerato da responsabilità soltanto se dimostri
 che l'evento dannoso non gli è in alcun modo imputabile: si tratta di una
 \emph{presunzione di responsabilità} con onere della prova invertito a carico
 del titolare.
-
-Sul piano del diritto nazionale, concorrono le disposizioni di cui all'art.~2043
-c.c. (responsabilità aquiliana) e, in presenza di trattamento di dati
-particolari su larga scala, eventualmente all'art.~2050 c.c. (responsabilità
-per attività pericolose), che parimenti prevede un'inversione dell'onere
-probatorio \autocite{codicecivile}.
 
 Le sanzioni amministrative pecuniarie, irrogate dal Garante per la protezione
 dei dati personali, possono raggiungere, ai sensi dell'art.~83 GDPR:
@@ -337,10 +336,10 @@ dei dati personali, possono raggiungere, ai sensi dell'art.~83 GDPR:
 \subsubsection{Il trattamento illecito di dati personali (art.~167 Codice Privacy)}
 \label{subsub:art167}
 
-Come sottolineato in dottrina, per fronteggiare le violazioni della sfera
-della riservatezza nell'ambito digitale, \textquote{nel nostro ordinamento sono
+Per fronteggiare le violazioni della sfera
+della riservatezza nell'ambito digitale, nel nostro ordinamento sono
 state introdotte alcune norme penali, inserite non nel Codice penale ma nel
-d.lgs. 196/2003 (c.d. Codice privacy)}
+d.lgs. 196/2003 (Codice privacy)
 \autocite[p.~38, \S~2.7]{pietropaoli2022}.
 
 L'art.~167 del Codice Privacy, nella formulazione successiva all'adeguamento
@@ -349,34 +348,31 @@ al GDPR operato dal D.Lgs.~101/2018, punisce con la reclusione da
 per altri profitto ovvero al fine di recare ad altri un danno, proceda al
 trattamento di dati personali in violazione delle disposizioni di cui agli
 artt.~123, 126, 129 e 130 del medesimo decreto, nonché in violazione
-delle misure di garanzia di cui all'art.~2-\emph{quinquiesdecies}, qualora
-ne derivi nocumento.
+delle misure di garanzia di cui all'art.~2-\emph{quinquiesdecies}, laddove ne consegua una lesione.
 
 La pena è aumentata a \textbf{uno a tre anni} qualora il fatto riguardi
-dati genetici, biometrici o relativi alla salute, all'orientamento sessuale,
-alle opinioni politiche, all'origine etnica.
+dati sensibili.
 
-\begin{normabox}[Art.~167 D.Lgs. 196/2003 -- Trattamento illecito di dati]
+\begin{normabox}[Art.~167 D.Lgs. 196/2003 -- Trattamento illecito di dati (sintesi)]
   \small
   ``1. Salvo che il fatto costituisca più grave reato, chiunque, al fine di
   trarne per sé o per altri profitto ovvero al fine di recare ad altri un danno,
   procede al trattamento di dati personali in violazione di quanto disposto
   \textelp{} è punito, se dal fatto deriva nocumento, con la reclusione da sei
-  mesi a un anno e sei mesi. 2. Se il fatto di cui al comma 1 riguarda dati
+  mesi a un anno e sei mesi. \\
+  2. Se il fatto di cui al comma 1 riguarda dati
   genetici, biometrici o relativi alla salute, alla vita sessuale, all'orientamento
   sessuale o alle opinioni, \textelp{} la pena è la reclusione da uno a tre anni.''
   \newline
-  \textit{Fonte: D.Lgs. 30 giugno 2003, n.~196, art.~167
-  \autocite{codiceprivacy2003}.}
+  {\scriptsize \textit{Fonte: D.Lgs. 30 giugno 2003, n.~196, art.~167
+  \autocite{codiceprivacy2003}.}}
 \end{normabox}
 
-Ai fini della configurazione del reato, la Corte di Cassazione ha chiarito
-che il \emph{nocumento} richiesto dalla norma può sostanziarsi anche in un
-danno non patrimoniale e che il \emph{fine di profitto} comprende qualsiasi
-vantaggio, anche non economico, che l'agente intenda conseguire mediante
-il trattamento illecito \autocite{cass_pen_2019_1285}.
+Perché si configuri questo reato, la giurisprudenza ha stabilito che non è strettamente necessario 
+un danno economico: è sufficiente anche un danno di natura morale. Inoltre, il vantaggio illecito 
+perseguito dal colpevole può consistere in un qualsiasi tipo di beneficio, anche non monetario.
 
-\subsubsection{La comunicazione e diffusione illecita di dati su larga scala (art.~167-bis)}
+\subsubsection{La comunicazione e diffusione illecita di dati personali su larga scala (art.~167-bis)}
 \label{subsub:art167bis}
 
 L'art.~167-\emph{bis} del Codice Privacy (introdotto dal D.Lgs.~101/2018)
@@ -384,47 +380,43 @@ punisce con la reclusione da \textbf{uno a sei anni} chiunque comunichi o
 diffonda dati personali oggetto di trattamento su larga scala, in violazione
 delle disposizioni del GDPR. La norma si applica con particolare intensità
 nel caso in cui i dati raccolti tramite \emph{form} vengano ceduti a terzi o
-pubblicati senza autorizzazione, configurando un c.d. \textbf{data breach
+pubblicati senza autorizzazione, configurando un cosidetto \textbf{data breach
 deliberato}.
 
-Come precisato in dottrina, qualora l'attacco informatico che genera il
-data breach comporti \textquote{la divulgazione non autorizzata di dati
-personali oggetto di trattamento su larga scala, si potrà fare riferimento
-all'art.~167-\emph{bis} del Codice privacy}
-\autocite[p.~39, \S~2.7]{pietropaoli2022}.
+\begin{normabox}[Art.~167-bis D.Lgs. 196/2003 -- Comunicazione e diffusione illecita di dati su larga scala (sintesi)]
+  \small
+  ``1. Salvo che il fatto costituisca più grave reato, chiunque comunica o diffonde,
+  al fine di trarne profitto per sé o altri ovvero al fine di arrecare danno, un
+  archivio automatizzato o una parte sostanziale di esso contenente dati personali
+  oggetto di trattamento su larga scala, in violazione degli articoli 2-ter, 2-sexies
+  e 2-octies, è punito con la reclusione da uno a sei anni.''
+  \newline
+  {\scriptsize \textit{Fonte: D.Lgs. 30 giugno 2003, n.~196, art.~167-bis
+  \autocite{codiceprivacy2003}.}}
+\end{normabox}
 
-\subsubsection{L'acquisizione fraudolenta di dati personali (art.~167-ter)}
+\subsubsection{L'acquisizione fraudolenta di dati personali su larga scala (art.~167-ter)}
 \label{subsub:art167ter}
 
 L'art.~167-\emph{ter} del Codice Privacy punisce con la reclusione da
-\textbf{sei mesi a quattro anni} chiunque, al fine di trarne profitto per sé
+\textbf{uno a quattro anni} chiunque, al fine di trarne profitto per sé
 o per altri ovvero per recare danno, acquisisca fraudolentemente dati
 personali oggetto di trattamento su larga scala. Tale fattispecie riguarda,
 tra l'altro, la predisposizione di \emph{form} ingannevoli (c.d.\ \emph{dark
 patterns}) che inducano l'utente a fornire dati personali in modo che non è
 consapevole o che non ha inteso.
 
-\subsubsection{Reati informatici connessi (artt.~615-ter e 635-bis c.p.)}
-\label{subsub:reatinf}
-
-Nella misura in cui la raccolta illecita di dati tramite \emph{form} si
-accompagni all'accesso non autorizzato ai sistemi informatici dell'ente
-raccoglitore --- ad esempio per estrarre i dati già archiviati --- potranno
-configurarsi ulteriori reati informatici.
-
-Ai sensi dell'art.~615-\emph{ter} c.p. (Accesso abusivo a un sistema informatico
-o telematico), introdotto dalla Legge 23 dicembre 1993, n.~547
-\autocite{l547_1993}, è punito con la reclusione fino a tre anni chiunque
-acceda abusivamente a un sistema informatico protetto. La Cassazione ha chiarito
-che \textquote{un account di posta è, difatti, un domicilio informatico protetto
-da una password che esprime la volontà dell'utente di farne uno spazio a sé
-riservato} \autocite[p.~19, nota 6]{pietropaoli2022}, principio estensibile a
-qualsiasi \emph{database} che contenga le informazioni raccolte tramite form
-\autocite{cass2021_13057}.
-
-L'art.~635-\emph{bis} c.p. (Danneggiamento di informazioni, dati e programmi
-informatici) potrà invece rilevare qualora il trattamento illecito comporti
-alterazione o distruzione dei dati degli utenti.
+\begin{normabox}[Art.~167-ter D.Lgs. 196/2003 -- Acquisizione fraudolenta di dati su larga scala (sintesi)]
+  \small
+  ``1. Salvo che il fatto costituisca più grave reato, chiunque, al fine di trarne
+  profitto per sé o altri ovvero di arrecare danno, acquisisca con mezzi
+  fraudolenti un archivio automatizzato o una parte sostanziale di esso contenente
+  dati personali oggetto di trattamento su larga scala è punito con la reclusione
+  da uno a quattro anni.''
+  \newline
+  {\scriptsize \textit{Fonte: D.Lgs. 30 giugno 2003, n.~196, art.~167-ter
+  \autocite{codiceprivacy2003}.}}
+\end{normabox}
 
 % ============================================================
 % SEZIONE 3 – CASI PRATICI
@@ -444,12 +436,12 @@ alterazione o distruzione dei dati degli utenti.
   (art.~5, par.~1, lett.~a GDPR) e ha irrogato una sanzione pecuniaria
   amministrativa, disponendo altresì la rettifica del \emph{form}.
   \newline
-  \textit{Fonte: \autocite{garante2021_newsletter}.}
+  {\scriptsize \textit{Fonte: \autocite{garante2021_newsletter}.}}
 \end{sentenzabox}
 
 \medskip
 
-Il caso illustra paradigmaticamente la fattispecie più frequente: il titolare
+Il caso illustra la fattispecie più frequente: il titolare
 del trattamento non predispone alcuna informativa visibile nella pagina che
 ospita il modulo, o la inserisce in un link oscuro nel \emph{footer} del sito,
 ritenendo erroneamente di assolvere così all'obbligo informativo. Tale prassi
@@ -469,7 +461,7 @@ accessibile e comprensibile.
   richiede un'esplicita e valida base giuridica tra quelle elencate all'art.~9,
   par.~2. L'ente è stato sanzionato per violazione degli artt.~5, 6 e 9 GDPR.
   \newline
-  \textit{Fonte: \autocite{garante2022_form}.}
+  {\scriptsize \textit{Fonte: \autocite{garante2022_form}.}}
 \end{sentenzabox}
 
 \medskip
@@ -493,16 +485,15 @@ granulare e separato dagli altri consensi.
   può consistere anche in un danno non patrimoniale, quale la perdita del controllo
   sui propri dati personali.
   \newline
-  \textit{Fonte: \autocite{cass_pen_2019_1285}.}
+  {\scriptsize \textit{Fonte: \autocite{cass_pen_2019_1285}.}}
 \end{sentenzabox}
 
 \medskip
 
-La sentenza assume rilievo particolare con riferimento ai \emph{form} online che
-raccolgono dati a finalità di profilazione commerciale. L'assenza di un'informativa
-adeguata e di un consenso valido, unita alla successiva cessione dei dati a terzi,
-integra compiutamente la fattispecie penale, indipendentemente dall'entità del
-profitto concretamente realizzato.
+Questa pronuncia è particolarmente significativa per i moduli web destinati alla profilazione 
+commerciale. Essa evidenzia come la raccolta di dati in assenza di un'idonea informativa e 
+di un valido consenso, seguita dalla loro cessione a terzi, sia sufficiente a configurare 
+il reato di trattamento illecito, a prescindere dal guadagno effettivamente ottenuto.
 
 \subsection{Corte di Cassazione civile -- Risarcimento del danno per trattamento illecito (2023)}
 \label{sub:cass2023}
@@ -518,8 +509,17 @@ profitto concretamente realizzato.
   non patrimoniale, senza che l'interessato debba dimostrare un pregiudizio
   ulteriore concreto.
   \newline
-  \textit{Fonte: \autocite{cass2023_privacyform}.}
+  {\scriptsize \textit{Fonte: \autocite{cass2023_privacyform}.}}
 \end{sentenzabox}
+
+\medskip
+
+La decisione riveste un'importanza fondamentale sul piano della responsabilità civile del titolare 
+del trattamento. L'inversione dell'onere della prova e il riconoscimento del danno non patrimoniale 
+legato alla semplice perdita di controllo sui propri dati personali rendono l'azione risarcitoria 
+un rischio concreto per chiunque gestisca moduli web non conformi. 
+La conformità del \emph{form} non rappresenta quindi solo una tutela contro le sanzioni del Garante, 
+ma uno scudo indispensabile contro le richieste di risarcimento dirette degli utenti.
 
 % ============================================================
 % SEZIONE 4 – CONCLUSIONI
@@ -540,15 +540,6 @@ In secondo luogo, la distinzione tra dati personali ordinari e dati particolari
 facoltativamente, di campi relativi alla salute, all'orientamento sessuale, alle
 opinioni politiche o ad altri elementi elencati nell'art.~9 GDPR richiede
 una base giuridica rafforzata e misure di sicurezza tecnicamente adeguate.
-
-In terzo luogo, come rilevato in dottrina, il quadro normativo applicabile è
-tutt'altro che semplice: esso è \textquote{un insieme di norme estremamente
-frammentato, che costringe l'interprete a peripezie argomentative continuamente
-esposte al rischio di trasformarsi in operazioni ermeneutiche analogiche}
-\autocite[p.~37, \S~2.7]{pietropaoli2022}. Ciononostante, la giurisprudenza
-del Garante e della Corte di Cassazione ha progressivamente consolidato
-principi applicativi chiari, che rendono la materia prevedibile per l'operatore
-che intenda conformarsi alla normativa vigente.
 
 Da un punto di vista operativo, chiunque intenda predisporre un \emph{form}
 online per la raccolta di dati personali deve, come \emph{minima misura}:

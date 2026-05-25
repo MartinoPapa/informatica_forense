@@ -1,0 +1,192 @@
+\documentclass[aspectratio=169]{beamer}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\usepackage{xcolor}
+\usepackage{booktabs}
+
+% ============================================================
+% STILE BEAMER PERSONALIZZATO (Tono istituzionale/legale)
+% ============================================================
+\usetheme{Boadilla}
+\usecolortheme{default}
+
+% Tavolozza colori coerente con il report principale
+\definecolor{legaleblue}{RGB}{20,52,100}
+\definecolor{legalegray}{RGB}{90,90,90}
+\definecolor{legalelightblue}{RGB}{220,232,246}
+
+\setbeamercolor{structure}{fg=legaleblue}
+\setbeamercolor{palette primary}{bg=legaleblue,fg=white}
+\setbeamercolor{palette secondary}{bg=legaleblue!80,fg=white}
+\setbeamercolor{palette tertiary}{bg=legaleblue!60,fg=white}
+\setbeamercolor{titlelike}{parent=structure,fg=legaleblue}
+\setbeamercolor{block title}{bg=legaleblue,fg=white}
+\setbeamercolor{block body}{bg=legalelightblue!20,fg=black}
+
+\setbeamertemplate{navigation symbols}{} % Rimuove i controlli di navigazione
+\setbeamertemplate{footline}[frame number]
+\setbeamertemplate{items}[square]
+
+% ============================================================
+% INFORMAZIONI PRESENTAZIONE
+% ============================================================
+\title[Raccolta illecita di dati tramite form]{La raccolta illecita di dati tramite \emph{form} online}
+\subtitle{Profili giuridici e tecnici della raccolta di dati personali}
+\author[M. Papa, A. Minati]{Martino Papa \and Alessio Minati}
+\institute[IF]{Informatica Forense -- A.A. 2025/2026}
+\date{25 Maggio 2026}
+
+\begin{document}
+
+% ------------------------------------------------------------
+% SLIDE 1: TITOLO
+% ------------------------------------------------------------
+\begin{frame}
+  \titlepage
+\end{frame}
+
+% ------------------------------------------------------------
+% SLIDE 2: INTRODUZIONE
+% ------------------------------------------------------------
+\begin{frame}{Introduzione: la porta d'accesso ai dati}
+  \begin{itemize}
+    \item I \textbf{\emph{form} online} rappresentano lo strumento standard per la raccolta di informazioni.
+    \item La semplicità di implementazione contrasta con l'alto rischio di violazioni.
+  \end{itemize}
+  
+  \vspace{0.3cm}
+  
+  \begin{block}{L'autodeterminazione informativa (S. Pietropaoli, 2022)}
+    \small
+    ``\dots~essi veicolano la nostra immagine nella rete; il diritto alla protezione dei dati personali si configura pertanto non soltanto come espressione del diritto alla riservatezza, ma anche come vera e propria espressione del \textbf{diritto all'autodeterminazione informativa}.''
+  \end{block}
+\end{frame}
+
+% ------------------------------------------------------------
+% SLIDE 3: LA CLASSIFICAZIONE DEI DATI
+% ------------------------------------------------------------
+\begin{frame}{La classificazione dei dati personali}
+  \begin{itemize}
+    \item \textbf{Dati personali ordinari} (Art. 4, n. 1 GDPR): Qualsiasi informazione riguardante una persona fisica identificata o identificabile.
+    \item \textbf{Dati particolari / sensibili} (Art. 9 GDPR): Oggetto di tutela rafforzata e di un \textbf{divieto generale di trattamento} (salvo consenso esplicito ex par. 2, lett. a).
+  \end{itemize}
+
+  \begin{block}{Art. 9, par. 1 GDPR -- Categorie particolari di dati}
+    \small
+    ``È vietato trattare dati personali che rivelino l'origine razziale o etnica, le opinioni politiche, le convinzioni religiose o filosofiche, o l'appartenenza sindacale, nonché trattare dati genetici, dati biometrici intesi ad identificare in modo univoco una persona fisica, dati relativi alla salute o alla vita sessuale o all'orientamento sessuale della persona.''
+  \end{block}
+\end{frame}
+
+% ------------------------------------------------------------
+% SLIDE 4: I PRINCIPI DEL TRATTAMENTO
+% ------------------------------------------------------------
+\begin{frame}{I Principi del Trattamento (Art. 5 GDPR)}
+  I moduli web devono essere progettati nel rispetto di 6 principi cardine:
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      \begin{itemize}
+        \item \textbf{Liceità, correttezza e trasparenza}: Raccolta basata su presupposti legali chiari.
+        \item \textbf{Limitazione della finalità}: Utilizzo vincolato esclusivamente agli scopi dichiarati.
+        \item \textbf{Minimizzazione dei dati}: Richiesta dei soli dati strettamente necessari.
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \begin{itemize}
+        \item \textbf{Esattezza}: Dati corretti e costantemente aggiornati.
+        \item \textbf{Limitazione della conservazione}: Conservazione limitata al tempo necessario.
+        \item \textbf{Integrità e riservatezza}: Protezione tecnica mediante protocollo HTTPS/TLS.
+      \end{itemize}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% ------------------------------------------------------------
+% SLIDE 5: PROFILI CIVILI: INFORMATIVA E CONSENSO
+% ------------------------------------------------------------
+\begin{frame}{Profili Civili: Informativa e Consenso}
+  \begin{itemize}
+    \item \textbf{Obbligo di informativa} (Art. 13 GDPR): Deve essere concisa, trasparente, intellegibile e facilmente accessibile dall'utente prima dell'invio.
+    \item \textbf{Il consenso} (Art. 7 GDPR), quando richiesto, deve essere:
+      \begin{itemize}
+        \item \textbf{Libero}: Non condizionato all'erogazione del servizio principale.
+        \item \textbf{Specifico}: Granulare e distinto per singola finalità.
+        \item \textbf{Informato}: Riferito a un'adeguata informativa.
+        \item \textbf{Inequivocabile}: Non derivante da caselle pre-spuntate (\emph{pre-ticked boxes}).
+      \end{itemize}
+  \end{itemize}
+\end{frame}
+
+% ------------------------------------------------------------
+% SLIDE 6: RESPONSABILITÀ CIVILE E RISARCIMENTO
+% ------------------------------------------------------------
+\begin{frame}{Responsabilità Civile e Risarcimento}
+  \begin{itemize}
+    \item \textbf{Diritto al risarcimento} (Art. 82 GDPR): Copre sia i danni materiali che quelli immateriali (compresa la perdita di controllo sui dati).
+    \item \textbf{Inversione dell'onere della prova}: Il titolare del trattamento deve dimostrare che il danno non gli è in alcun modo imputabile.
+  \end{itemize}
+
+  \begin{block}{Art. 82, par. 1 GDPR -- Diritto al risarcimento}
+    \small
+    ``Chiunque subisca un danno materiale o immateriale causato da una violazione del presente regolamento ha il diritto di ottenere il risarcimento del danno dal titolare del trattamento o dal responsabile del trattamento.''
+  \end{block}
+\end{frame}
+
+% ------------------------------------------------------------
+% SLIDE 7: I REATI PENALI (Codice della Privacy)
+% ------------------------------------------------------------
+\begin{frame}{I Reati Penali (Codice della Privacy)}
+  La tutela penale interviene sulle condotte a maggior coefficiente di offensività:
+  
+  \begin{itemize}
+    \item \textbf{Art. 167 -- Trattamento illecito di dati}:
+      \begin{itemize}
+        \item Fine di profitto/danno + nocumento. Reclusione da 6 mesi a 1 anno e 6 mesi (da 1 a 3 anni per dati sensibili).
+      \end{itemize}
+    \item \textbf{Art. 167-bis -- Comunicazione e diffusione illecita su larga scala}:
+      \begin{itemize}
+        \item Condivisione o leak deliberato di interi database di utenti. Reclusione da 1 a 6 anni.
+      \end{itemize}
+    \item \textbf{Art. 167-ter -- Acquisizione fraudolenta su larga scala}:
+      \begin{itemize}
+        \item Raccolta tramite phishing, hackeraggio o \emph{dark patterns}. Reclusione da 1 a 4 anni.
+      \end{itemize}
+  \end{itemize}
+\end{frame}
+
+% ------------------------------------------------------------
+% SLIDE 8: CASI PRATICI E GIURISPRUDENZA
+% ------------------------------------------------------------
+\begin{frame}{Casi Pratici e Giurisprudenza}
+  \begin{itemize}
+    \item \textbf{Garante Privacy (Provv. 2021)}: Sanzione a ente pubblico per form di contatto sprovvisto di informativa ex Art. 13 GDPR.
+    \item \textbf{Garante Privacy (Provv. 2022)}: Sanzione per form di reclutamento contenente campi sulla salute senza consenso ex Art. 9 GDPR.
+    \item \textbf{Cass. Penale n. 1285/2019}: Condanna ex Art. 167 per cessione illecita di database di utenti a scopi commerciali (il profitto può essere indiretto).
+    \item \textbf{Cass. Civile n. 407/2023}: Risarcimento del danno non patrimoniale per violazione del GDPR. La perdita di controllo sui dati è fonte di danno risarcibile.
+  \end{itemize}
+\end{frame}
+
+% ------------------------------------------------------------
+% SLIDE 9: CHECKLIST DI CONFORMITÀ
+% ------------------------------------------------------------
+\begin{frame}{Checklist di Conformità per i Form Web}
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      \begin{itemize}
+        \item \textbf{1. Trasparenza}: Informativa completa ex Art. 13 GDPR sempre accessibile.
+        \item \textbf{2. Base giuridica}: Definita per ogni finalità di trattamento.
+        \item \textbf{3. Minimizzazione}: Richiedere solo i dati strettamente indispensabili.
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \begin{itemize}
+        \item \textbf{4. Consenso granulare}: Checkbox separate e non pre-selezionate.
+        \item \textbf{5. Sicurezza tecnica}: Obbligo di protocollo HTTPS/TLS e cifratura dati.
+        \item \textbf{6. Gestione dati sensibili}: Consenso esplicito ed elevati standard di sicurezza.
+      \end{itemize}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\end{document}

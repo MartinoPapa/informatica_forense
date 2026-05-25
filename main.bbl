@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.2 $
+% $ biblatex bbl format version 3.3 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -18,30 +18,30 @@
 
 
 \refsection{0}
-  \datalist[entry]{nyt/global//global/global}
-    \entry{carta_nizza}{misc}{}
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{carta_nizza}{misc}{}{}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
+      \field{labeldatesource}{}
       \field{labeltitlesource}{title}
       \field{howpublished}{Gazzetta Ufficiale dell'Unione Europea, C 326, pp.~391--407}
       \field{note}{Art.~8 -- Protezione dei dati di carattere personale; Art.~7 -- Rispetto della vita privata e della vita familiare}
       \field{title}{Carta dei diritti fondamentali dell'Unione europea}
       \field{year}{2012}
     \endentry
-    \entry{cedu}{misc}{}
+    \entry{cedu}{misc}{}{}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
+      \field{labeldatesource}{}
       \field{labeltitlesource}{title}
       \field{howpublished}{Roma, 4 novembre 1950}
       \field{note}{Art.~8 -- Diritto al rispetto della vita privata e familiare}
       \field{title}{Convenzione per la salvaguardia dei diritti dell'uomo e delle libertà fondamentali ({CEDU})}
       \field{year}{1950}
     \endentry
-    \entry{cass2023_privacyform}{misc}{}
+    \entry{cass2023_privacyform}{misc}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=95744400844c04d82eb5a487d5757695}{%
            family={{Corte di Cassazione, Sezione I civile}},
@@ -49,21 +49,23 @@
       }
       \strng{namehash}{95744400844c04d82eb5a487d5757695}
       \strng{fullhash}{95744400844c04d82eb5a487d5757695}
+      \strng{fullhashraw}{95744400844c04d82eb5a487d5757695}
       \strng{bibnamehash}{95744400844c04d82eb5a487d5757695}
       \strng{authorbibnamehash}{95744400844c04d82eb5a487d5757695}
       \strng{authornamehash}{95744400844c04d82eb5a487d5757695}
       \strng{authorfullhash}{95744400844c04d82eb5a487d5757695}
+      \strng{authorfullhashraw}{95744400844c04d82eb5a487d5757695}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Trattamento illecito di dati personali raccolti tramite form web privo di adeguata informativa: risarcimento del danno non patrimoniale}
       \field{title}{Sentenza 10 gennaio 2023, n.~407}
       \field{year}{2023}
     \endentry
-    \entry{cass_pen_2019_1285}{misc}{}
+    \entry{cass_pen_2019_1285}{misc}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=2472b8ebbd8aec91a3d1353e7f375ba7}{%
            family={{Corte di Cassazione, Sezione II penale}},
@@ -71,64 +73,44 @@
       }
       \strng{namehash}{2472b8ebbd8aec91a3d1353e7f375ba7}
       \strng{fullhash}{2472b8ebbd8aec91a3d1353e7f375ba7}
+      \strng{fullhashraw}{2472b8ebbd8aec91a3d1353e7f375ba7}
       \strng{bibnamehash}{2472b8ebbd8aec91a3d1353e7f375ba7}
       \strng{authorbibnamehash}{2472b8ebbd8aec91a3d1353e7f375ba7}
       \strng{authornamehash}{2472b8ebbd8aec91a3d1353e7f375ba7}
       \strng{authorfullhash}{2472b8ebbd8aec91a3d1353e7f375ba7}
+      \strng{authorfullhashraw}{2472b8ebbd8aec91a3d1353e7f375ba7}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Trattamento illecito di dati personali (art.~167 D.Lgs. 196/2003): configurabilità del reato in caso di raccolta di dati senza consenso a scopo di profitto}
       \field{title}{Sentenza 15 gennaio 2019, n.~1285}
       \field{year}{2019}
     \endentry
-    \entry{cass2021_13057}{misc}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=918adcb7ee98004b6ee84284463f9772}{%
-           family={{Corte di Cassazione, Sezione V penale}},
-           familyi={C\bibinitperiod}}}%
-      }
-      \strng{namehash}{918adcb7ee98004b6ee84284463f9772}
-      \strng{fullhash}{918adcb7ee98004b6ee84284463f9772}
-      \strng{bibnamehash}{918adcb7ee98004b6ee84284463f9772}
-      \strng{authorbibnamehash}{918adcb7ee98004b6ee84284463f9772}
-      \strng{authornamehash}{918adcb7ee98004b6ee84284463f9772}
-      \strng{authorfullhash}{918adcb7ee98004b6ee84284463f9772}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{Accesso abusivo a sistema informatico (art.~615-ter c.p.): protezione del domicilio informatico e rilevanza del consenso del titolare}
-      \field{title}{Sentenza 28 ottobre 2015, n.~13057}
-      \field{year}{2015}
-    \endentry
-    \entry{dlgs101_2018}{misc}{}
+    \entry{dlgs101_2018}{misc}{}{}
       \field{sortinit}{D}
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
+      \field{labeldatesource}{}
       \field{labeltitlesource}{title}
       \field{howpublished}{Gazzetta Ufficiale della Repubblica Italiana, n.~205}
       \field{title}{Decreto legislativo 10 agosto 2018, n.~101 -- Disposizioni per l'adeguamento della normativa nazionale alle disposizioni del Regolamento {(UE)} 2016/679}
       \field{year}{2018}
     \endentry
-    \entry{codiceprivacy2003}{misc}{}
+    \entry{codiceprivacy2003}{misc}{}{}
       \field{sortinit}{D}
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
+      \field{labeldatesource}{}
       \field{labeltitlesource}{title}
       \field{howpublished}{Gazzetta Ufficiale della Repubblica Italiana, n.~174}
       \field{note}{Modificato dal D.Lgs. 10 agosto 2018, n.~101 per l'adeguamento al {GDPR}}
       \field{title}{Decreto legislativo 30 giugno 2003, n.~196 -- Codice in materia di protezione dei dati personali}
       \field{year}{2003}
     \endentry
-    \entry{garante2021_newsletter}{misc}{}
+    \entry{garante2021_newsletter}{misc}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=ade79fa57783d031687de018717f6d49}{%
            family={{Garante per la protezione dei dati personali}},
@@ -136,15 +118,17 @@
       }
       \strng{namehash}{ade79fa57783d031687de018717f6d49}
       \strng{fullhash}{ade79fa57783d031687de018717f6d49}
+      \strng{fullhashraw}{ade79fa57783d031687de018717f6d49}
       \strng{bibnamehash}{ade79fa57783d031687de018717f6d49}
       \strng{authorbibnamehash}{ade79fa57783d031687de018717f6d49}
       \strng{authornamehash}{ade79fa57783d031687de018717f6d49}
       \strng{authorfullhash}{ade79fa57783d031687de018717f6d49}
+      \strng{authorfullhashraw}{ade79fa57783d031687de018717f6d49}
       \field{extraname}{1}
       \field{sortinit}{G}
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{Newsletter del Garante, n.~479}
@@ -152,7 +136,7 @@
       \field{title}{Provvedimento del 29 aprile 2021 -- Sanzione per raccolta di dati tramite form online senza adeguata informativa e senza valido consenso}
       \field{year}{2021}
     \endentry
-    \entry{garante2022_form}{misc}{}
+    \entry{garante2022_form}{misc}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=ade79fa57783d031687de018717f6d49}{%
            family={{Garante per la protezione dei dati personali}},
@@ -160,15 +144,17 @@
       }
       \strng{namehash}{ade79fa57783d031687de018717f6d49}
       \strng{fullhash}{ade79fa57783d031687de018717f6d49}
+      \strng{fullhashraw}{ade79fa57783d031687de018717f6d49}
       \strng{bibnamehash}{ade79fa57783d031687de018717f6d49}
       \strng{authorbibnamehash}{ade79fa57783d031687de018717f6d49}
       \strng{authornamehash}{ade79fa57783d031687de018717f6d49}
       \strng{authorfullhash}{ade79fa57783d031687de018717f6d49}
+      \strng{authorfullhashraw}{ade79fa57783d031687de018717f6d49}
       \field{extraname}{2}
       \field{sortinit}{G}
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{Registro dei provvedimenti del Garante}
@@ -176,17 +162,7 @@
       \field{title}{Provvedimento del 15 settembre 2022 -- Sanzione per trattamento illecito di dati speciali raccolti tramite form online}
       \field{year}{2022}
     \endentry
-    \entry{l547_1993}{misc}{}
-      \field{sortinit}{L}
-      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{Gazzetta Ufficiale della Repubblica Italiana, n.~305}
-      \field{title}{Legge 23 dicembre 1993, n.~547 -- Modificazioni ed integrazioni alle norme del codice penale e del codice di procedura penale in tema di criminalità informatica}
-      \field{year}{1993}
-    \endentry
-    \entry{pietropaoli2022}{book}{}
+    \entry{pietropaoli2022}{book}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=afdb7eaf73ea9a78ecba0aabaf62eb73}{%
            family={Pietropaoli},
@@ -203,36 +179,27 @@
       }
       \strng{namehash}{afdb7eaf73ea9a78ecba0aabaf62eb73}
       \strng{fullhash}{afdb7eaf73ea9a78ecba0aabaf62eb73}
+      \strng{fullhashraw}{afdb7eaf73ea9a78ecba0aabaf62eb73}
       \strng{bibnamehash}{afdb7eaf73ea9a78ecba0aabaf62eb73}
       \strng{authorbibnamehash}{afdb7eaf73ea9a78ecba0aabaf62eb73}
       \strng{authornamehash}{afdb7eaf73ea9a78ecba0aabaf62eb73}
       \strng{authorfullhash}{afdb7eaf73ea9a78ecba0aabaf62eb73}
+      \strng{authorfullhashraw}{afdb7eaf73ea9a78ecba0aabaf62eb73}
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{978-88-921-4451-4}
       \field{title}{Informatica criminale. Diritto e sicurezza nell'era digitale}
       \field{year}{2022}
     \endentry
-    \entry{codicecivile}{misc}{}
+    \entry{gdpr2016}{misc}{}{}
       \field{sortinit}{R}
       \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{Gazzetta Ufficiale della Repubblica Italiana}
-      \field{note}{Art.~2043 (responsabilità aquiliana); Art.~2050 (attività pericolose)}
-      \field{title}{Regio Decreto 16 marzo 1942, n.~262 -- Codice Civile}
-      \field{year}{1942}
-    \endentry
-    \entry{gdpr2016}{misc}{}
-      \field{sortinit}{R}
-      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
+      \field{labeldatesource}{}
       \field{labeltitlesource}{title}
       \field{howpublished}{Gazzetta Ufficiale dell'Unione Europea, L 119, pp.~1--88}
       \field{note}{Entrato in vigore il 25 maggio 2018}

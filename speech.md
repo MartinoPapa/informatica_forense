@@ -1,116 +1,78 @@
-# Speech per la Presentazione: La raccolta illecita di dati tramite form online
+# Speech: La raccolta illecita di dati tramite form online
 
-**Durata stimata:** ~10 minuti (circa 45-50 secondi a slide)
-
-**Nota per i relatori:** Le slide sono state progettate per contenere esclusivamente i riferimenti normativi (le leggi nei box), al fine di non distrarre il pubblico con testi troppo lunghi e permettere all'audience di focalizzarsi su di voi. Sarete voi a spiegare a voce il contesto, l'applicabilità e i casi pratici (la giurisprudenza) collegati a ciascuna norma. Questo documento segue fedelmente l'ordine e il filo conduttore del report `main.pdf`.
-
----
-
-## Slide 1: Titolo (0:00 - 0:30)
-**Cosa dire:**
-- Benvenuti a tutti. Oggi affronteremo un tema di grande attualità: la raccolta illecita di dati personali attraverso i *form* online.
-- I form web sono uno strumento onnipresente, rapido ed economico per raccogliere informazioni. Tuttavia, la loro semplicità di implementazione li rende spesso una delle principali fonti di violazioni.
-- Nel corso di questi dieci minuti vi guideremo attraverso l'intero panorama normativo: dai principi di base stabiliti dal GDPR, passando per le responsabilità civili, fino ad arrivare ai reati penali previsti dal Codice della Privacy. Includeremo anche alcuni esempi pratici tratti da provvedimenti reali.
+**Durata:** ~10 minuti
+**Avvertenza:** Questo discorso è basato *esclusivamente* sul contenuto del report `main.tex`. Le slide mostrano solo i riferimenti normativi nei box, mentre i relatori esporranno a voce i collegamenti e i casi pratici descritti nel documento.
 
 ---
 
-## Slide 2: Diritti Fondamentali (0:30 - 1:15)
-**Cosa dire:**
-- Prima di parlare di tecnicismi, dobbiamo ricordare *perché* proteggiamo i dati.
-- Come vedete alle mie spalle, l'Articolo 8 della Carta di Nizza e l'Articolo 8 della CEDU sanciscono che la protezione dei dati è un diritto fondamentale.
-- Come evidenziato dalla dottrina, i dati veicolano la nostra identità in rete. Raccoglierli tramite un modulo online non è solo una transazione informatica, ma va a toccare il "diritto all'autodeterminazione informativa" di ciascun individuo.
+## Slide 1: Titolo (0:00 - 0:45)
+- **Cosa dire:** 
+  Benvenuti. L'era digitale ha radicalmente mutato le modalità di contatto tra enti e utenti. L'utilizzo di *form* online è diventato una prassi ordinaria in ogni settore, consentendo di acquisire una mole considerevole di dati con semplicità e a costo pressoché nullo.
+  Tuttavia, proprio questa facilità di accesso rappresenta il principale fattore di rischio. Se un modulo web viene predisposto senza le adeguate cautele o senza basi giuridiche, si realizzano le condizioni per una pluralità di illeciti amministrativi e penali. Oggi vedremo i profili giuridici che regolano la materia, seguendo il Regolamento UE (GDPR) e il Codice della Privacy.
 
----
+## Slide 2: Diritti Fondamentali (0:45 - 1:30)
+- **Cosa dire:** 
+  Perché proteggiamo i dati? Nell'epoca attuale, i dati veicolano la nostra immagine nella rete. Come rileva la dottrina (Pietropaoli, 2022), la tutela dei dati personali non è soltanto espressione del diritto alla riservatezza, ma è una vera e propria espressione del diritto all'autodeterminazione informativa.
+  A livello di diritti fondamentali, vengono in rilievo due norme cruciali: l'art. 8 della Carta dei Diritti Fondamentali dell'Unione Europea e l'art. 8 della Convenzione Europea dei Diritti dell'Uomo (CEDU).
 
-## Slide 3: Definizione di Dato Personale (1:15 - 2:00)
-**Cosa dire:**
-- Ma cosa stiamo raccogliendo esattamente in un form? 
-- L'Articolo 4, numero 1 del GDPR ci definisce il dato personale in senso molto ampio: *qualsiasi informazione* riguardante una persona fisica identificata o identificabile.
-- Non si tratta quindi solo del nome e del cognome, ma anche di indirizzi IP, cookie, un numero di telefono o un'e-mail. Quando progettiamo un form, qualunque campo richiediamo all'utente rappresenta un potenziale dato personale.
+## Slide 3: Il Dato Personale (Art. 4, n. 1 GDPR) (1:30 - 2:15)
+- **Cosa dire:** 
+  Preliminare a ogni valutazione giuridica è la corretta qualificazione del dato raccolto. 
+  L'art. 4, numero 1 del GDPR fornisce una definizione chiarissima, qualificando come "dato personale" qualsiasi informazione riguardante una persona fisica identificata o identificabile.
 
----
+## Slide 4: I Dati Particolari (Art. 9 GDPR) (2:15 - 3:15)
+- **Cosa dire:** 
+  Esiste poi una categoria che richiede una tutela rafforzata: i dati particolari, o sensibili, disciplinati dall'art. 9 del GDPR. Questi includono informazioni che rivelano l'origine razziale, le opinioni politiche, le convinzioni religiose, dati biometrici, genetici o relativi alla salute e orientamento sessuale.
+  Per l'art. 9 vige un generale **divieto di trattamento**, salva l'eccezione del consenso esplicito.
+  *Caso pratico dalla Giurisprudenza:* Il Garante Privacy, con Provvedimento del 15 settembre 2022, ha sanzionato un'azienda privata che aveva inserito nel proprio form di candidatura online campi facoltativi relativi allo stato di salute e all'appartenenza sindacale. Il Garante ha chiarito che il trattamento di dati particolari non può essere fondato esclusivamente sulla facoltatività del campo.
 
-## Slide 4: Categorie Particolari di Dati (2:00 - 2:45)
-**Cosa dire:**
-- Massima attenzione va data all'Articolo 9 del GDPR, che disciplina i cosiddetti dati "sensibili".
-- Questa norma impone un generale **divieto di trattamento** per informazioni relative all'origine etnica, alle opinioni politiche, allo stato di salute o all'orientamento sessuale.
-- **Caso Pratico:** Nel 2022, il Garante Privacy ha sanzionato duramente un'azienda che aveva inserito nel form di assunzione dei campi, seppur *facoltativi*, relativi all'appartenenza sindacale e allo stato di salute. La sola facoltatività non basta: per trattare queste informazioni serve un consenso esplicito e separato.
+## Slide 5: I Principi del GDPR (Art. 5) (3:15 - 4:15)
+- **Cosa dire:** 
+  Qualsiasi form online deve essere progettato nel rispetto dei sei principi essenziali definiti dall'art. 5 del GDPR:
+  1. *Liceità, correttezza e trasparenza*: la raccolta deve fondarsi su una base giuridica valida (come contratto, obbligo legale o consenso).
+  2. *Limitazione della finalità*: i dati possono essere trattati esclusivamente per gli scopi dichiarati.
+  3. *Minimizzazione dei dati*: occorre raccogliere soltanto dati adeguati, pertinenti e limitati; qualsiasi campo superfluo integra una violazione.
+  4. *Esattezza*: il titolare deve garantire la correttezza dei dati.
+  5. *Limitazione della conservazione*: i dati non vanno conservati oltre il tempo necessario.
+  6. *Integrità e riservatezza*: il form deve essere tecnicamente protetto tramite connessioni cifrate come il protocollo HTTPS/TLS.
 
----
+## Slide 6: L'Obbligo di Informativa (Art. 13 GDPR) (4:15 - 5:15)
+- **Cosa dire:** 
+  Spostandoci sul profilo civilistico, l'art. 13 GDPR impone al titolare di fornire all'interessato, al momento della raccolta, una serie di informazioni in forma concisa, trasparente e intellegibile. Un form online sprovvisto di informativa viola l'obbligo.
+  *Caso pratico:* Il Garante Privacy (Provv. 29 aprile 2021) ha sanzionato un ente pubblico per aver predisposto sul proprio sito un modulo di contatto che raccoglieva nome, email e telefono senza alcuna informativa adeguata visibile nella pagina.
 
-## Slide 5: I Principi del Trattamento (2:45 - 3:30)
-**Cosa dire:**
-- Quali sono le regole del gioco per trattare i dati? L'Articolo 5 elenca sei principi cardine su cui deve fondarsi ogni modulo web.
-- Devono essere leciti e trasparenti, e rispettare il principio della **limitazione della finalità**: non posso usare per fare marketing i dati che mi hai fornito per spedire un pacco.
-- Molto importante è la **minimizzazione**: devo chiedere nel form *solo* i dati strettamente necessari. E infine l'**integrità e riservatezza**, il che ci impone di usare form tecnicamente sicuri, protetti da protocolli cifrati come l'HTTPS.
+## Slide 7: Il Consenso dell'Interessato (Art. 7 GDPR) (5:15 - 6:00)
+- **Cosa dire:** 
+  Qualora la raccolta si basi sul consenso dell'utente (non essendo obbligatoria per altri motivi ex art. 6), l'art. 7 GDPR stabilisce che questo debba essere:
+  - *Libero*: l'accesso al servizio non deve essere condizionato alla prestazione del consenso per finalità non necessarie.
+  - *Specifico*: un unico checkbox che raggruppi più finalità non soddisfa il requisito.
+  - *Informato*: riferito a un'adeguata informativa.
+  - *Inequivocabile*: le caselle pre-spuntate, le cosiddette pre-ticked boxes, non integrano mai un consenso valido.
 
----
+## Slide 8: La Responsabilità Civile (Art. 82 GDPR) (6:00 - 7:00)
+- **Cosa dire:** 
+  In caso di violazioni, entra in gioco l'art. 82 del GDPR. L'utente che ha subito un danno materiale o immateriale ha il diritto di ottenere il risarcimento. Inoltre, il titolare subisce un'inversione dell'onere della prova e deve dimostrare di non avere colpe (presunzione di responsabilità).
+  *Caso pratico:* Nel 2023, la Corte di Cassazione Civile (sent. 407/2023) ha confermato la condanna al risarcimento del danno non patrimoniale per un modulo web privo di informativa. I giudici hanno chiarito che il mero fatto che i dati siano trattati in violazione del GDPR e la semplice perdita di controllo sui propri dati costituiscono un presupposto sufficiente per riconoscere il danno.
 
-## Slide 6: Liceità del Trattamento (3:30 - 4:15)
-**Cosa dire:**
-- Strettamente legato al principio di liceità è l'Articolo 6. Non si possono raccogliere dati senza una valida *base giuridica*.
-- Tra le varie elencate dalla norma, quelle più utilizzate per i form online sono due: l'esecuzione di un contratto (ad esempio, sto acquistando un prodotto) e il consenso. 
-- Se il dato è funzionale all'erogazione di un servizio, ci si appoggia al contratto. Se invece lo scopo è accessorio, come l'invio di newsletter o la profilazione commerciale, servirà necessariamente il consenso espresso dall'utente.
+## Slide 9: Le Sanzioni Amministrative (Art. 83 GDPR) (7:00 - 7:45)
+- **Cosa dire:** 
+  L'art. 83 del GDPR prevede pesanti sanzioni pecuniarie amministrative irrogate dal Garante.
+  Possono raggiungere fino a 10 milioni di euro o il 2% del fatturato mondiale annuo per la violazione delle condizioni del consenso o per la mancata informativa. Le sanzioni salgono fino a 20 milioni di euro o al 4% del fatturato qualora la violazione riguardi i principi di base (come quelli dell'art. 5) o il trattamento di dati particolari senza base giuridica.
 
----
+## Slide 10: Reati Penali - Trattamento Illecito (Art. 167) (7:45 - 8:30)
+- **Cosa dire:** 
+  Le condotte a maggior coefficiente di offensività trovano tutela penale nel Codice della Privacy.
+  L'art. 167 punisce il trattamento illecito di dati. Per configurarsi serve il fine di profitto o danno, dal quale deve derivare un effettivo nocumento. Le pene vanno da sei mesi a un anno e mezzo di reclusione, e aumentano da uno a tre anni se riguardano dati sensibili.
+  *Caso pratico:* La Cassazione penale (sent. 1285/2019) ha confermato il reato in capo a un operatore che raccoglieva dati tramite web per cederli a terzi a fini commerciali. La Corte ha precisato che il "fine di profitto" è integrato anche dalla sola prospettiva di un vantaggio economico indiretto, e che il nocumento può consistere in un danno morale.
 
-## Slide 7: L'Obbligo di Informativa (4:15 - 5:00)
-**Cosa dire:**
-- E per garantire la trasparenza, entra in gioco l'Articolo 13: l'obbligo di informativa. L'utente deve sapere sempre a chi e per cosa sta fornendo i propri dati, *prima* di cliccare "Invia".
-- **Caso Pratico:** A tal proposito, nel 2021 il Garante Privacy ha sanzionato un ente pubblico proprio perché aveva predisposto una pagina "Contattaci" con un form sprovvisto di informativa. L'ente pensava bastasse la privacy policy nel footer del sito, ma il Garante ha chiarito che le informazioni devono essere facilmente accessibili direttamente al momento della raccolta.
+## Slide 11: Reati Penali - Comunicazione e Diffusione (Art. 167-bis) (8:30 - 9:15)
+- **Cosa dire:** 
+  L'art. 167-bis punisce chi comunica o diffonde illecitamente dati personali.
+  La norma si applica con particolare intensità nel caso in cui i dati raccolti tramite form vengano ceduti a terzi o pubblicati senza autorizzazione su larga scala, configurando un cosiddetto *data breach deliberato*. La pena prevista è durissima: reclusione da uno a sei anni.
 
----
-
-## Slide 8: Il Consenso dell'Interessato (5:00 - 5:45)
-**Cosa dire:**
-- Torniamo al consenso (Articolo 7). Se il nostro form si basa sul consenso, questo non può essere estorto o ambiguo.
-- Deve essere **Libero**: non posso obbligarti ad iscriverti alla newsletter per farti scaricare un documento.
-- Deve essere **Specifico e Informato**: granulare per ogni singola finalità e supportato da informativa.
-- Infine, deve essere **Inequivocabile**: questo significa che le caselle pre-spuntate (le cosiddette *pre-ticked boxes*) sono illegali. Serve un'azione positiva da parte dell'utente.
-
----
-
-## Slide 9: Diritto al Risarcimento (5:45 - 6:30)
-**Cosa dire:**
-- Cosa succede se il form non rispetta queste norme? Iniziamo dalle conseguenze civili. L'Articolo 82 stabilisce il diritto al risarcimento per l'utente danneggiato.
-- La particolarità sta nell'inversione dell'onere della prova: è chi raccoglie i dati che deve dimostrare di aver adottato ogni misura idonea.
-- **Caso Pratico:** Nel 2023, la Cassazione Civile (sentenza 407) ha ribadito un concetto chiave: la semplice "perdita di controllo" sui propri dati, a causa di un form illecito, costituisce di per sé un danno non patrimoniale risarcibile, anche senza dimostrare altre perdite.
-
----
-
-## Slide 10: Sanzioni Amministrative (6:30 - 7:15)
-**Cosa dire:**
-- Dal lato amministrativo, le multe, disciplinate dall'Articolo 83 del GDPR, sono progettate per essere estremamente dissuasive.
-- In caso di mancanza di informativa o di un modulo con consensi forzati, la multa può arrivare fino a 10 milioni di euro o al 2% del fatturato mondiale annuo dell'impresa.
-- Se invece vengono violati i principi base o si trattano dati particolari in modo illecito (violazione dell'Art. 5 o dell'Art. 9), il tetto raddoppia: fino a 20 milioni di euro o il 4% del fatturato.
-
----
-
-## Slide 11: I Reati Penali: Trattamento Illecito (7:15 - 8:10)
-**Cosa dire:**
-- Nelle condotte più offensive, si sfocia nel penale, regolato in Italia dal Codice della Privacy.
-- L'Articolo 167 punisce il trattamento illecito. Si configura quando si raccolgono dati con form illegittimi, causando nocumento, col preciso intento di trarre profitto per sé o causare danno ad altri.
-- **Caso Pratico:** Nel 2019 (sent. 1285), la Cassazione Penale ha confermato la condanna a carico di chi aveva raccolto dati di utenti per cederli a fini commerciali. La Corte ha chiarito che il "profitto" non dev'essere per forza monetario o immediato per far scattare la reclusione, che per i dati sensibili arriva fino a tre anni.
-
----
-
-## Slide 12: I Reati Penali: Comunicazione e Diffusione (8:10 - 9:00)
-**Cosa dire:**
-- Il Codice Privacy è ancora più severo quando i dati raccolti vengono poi diffusi in massa.
-- L'Articolo 167-bis punisce la comunicazione e diffusione illecita su larga scala. È la norma pensata per contrastare il *data breach* deliberato, ovvero la cessione non autorizzata o il "leak" nel web di interi database di utenti raccolti nel tempo.
-- Essendo una minaccia sistemica alla privacy, le pene sono altissime e prevedono la reclusione da uno a sei anni.
-
----
-
-## Slide 13: I Reati Penali: Acquisizione Fraudolenta (9:00 - 9:50)
-**Cosa dire:**
-- Infine, l'Articolo 167-ter colpisce direttamente il *metodo* fraudolento di raccolta su larga scala.
-- Questa è la fattispecie che incrimina chi ruba database tramite hackeraggio o campagne di phishing, ma copre anche l'uso deliberato di *dark patterns*: quelle interfacce grafiche nei form online progettate appositamente per ingannare l'utente e carpirgli il consenso senza che se ne accorga.
-- Chi acquisisce database in questo modo rischia da uno a quattro anni di reclusione.
-
----
-
-## Conclusione (9:50 - 10:00)
-**Cosa dire:**
-- Per concludere, progettare e mettere online un form per la raccolta dati non è solo un semplice "esercizio tecnico" da affidare a uno sviluppatore.
-- È un atto che richiede una profonda consapevolezza giuridica fin dalle primissime fasi del design. Solo in questo modo è possibile tutelare il diritto fondamentale degli utenti e mettere l'azienda al riparo da pesantissime conseguenze civili e penali. Vi ringrazio per l'attenzione.
+## Slide 12: Reati Penali - Acquisizione Fraudolenta (Art. 167-ter) (9:15 - 10:00)
+- **Cosa dire:** 
+  Concludiamo con l'art. 167-ter, che punisce l'acquisizione fraudolenta di dati personali su larga scala.
+  Questa fattispecie sanziona chi ottiene interi archivi automatizzati attraverso mezzi fraudolenti. Include il phishing, l'hackeraggio, ma anche la predisposizione di form ingannevoli (i cosiddetti \emph{dark patterns}) che inducano l'utente a fornire dati in modo non consapevole. Per queste pratiche la pena è la reclusione da uno a quattro anni.
+  
+  **Conclusione:** Abbiamo visto come la predisposizione di un form online non sia un'operazione neutra sul piano giuridico. Da un punto di vista operativo, la definizione delle basi giuridiche, della minimizzazione e di una sicurezza tecnica (checklist di conformità) non solo protegge l'utente, ma è lo scudo indispensabile per tutelare chi raccoglie i dati. Grazie per l'attenzione.

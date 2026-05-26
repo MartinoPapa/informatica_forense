@@ -48,145 +48,164 @@
 \end{frame}
 
 % ------------------------------------------------------------
-% SLIDE 2: INTRODUZIONE
+% SLIDE 2: DIRITTI FONDAMENTALI (Art. 8 Carta Nizza & Art. 8 CEDU)
 % ------------------------------------------------------------
-\begin{frame}{Introduzione: la porta d'accesso ai dati}
-  \begin{itemize}
-    \item I \textbf{\emph{form} online} rappresentano lo strumento standard per la raccolta di informazioni.
-    \item La semplicità di implementazione contrasta con l'alto rischio di violazioni.
-  \end{itemize}
-  
-  \vspace{0.3cm}
-  
-  \begin{block}{L'autodeterminazione informativa (S. Pietropaoli, 2022)}
+\begin{frame}{Diritti Fondamentali}
+  \begin{block}{Art. 8 Carta dei Diritti Fondamentali dell'UE -- Protezione dei dati personali}
     \small
-    ``\dots~essi veicolano la nostra immagine nella rete; il diritto alla protezione dei dati personali si configura pertanto non soltanto come espressione del diritto alla riservatezza, ma anche come vera e propria espressione del \textbf{diritto all'autodeterminazione informativa}.''
+    ``1. Ogni persona ha diritto alla protezione dei dati personali che la riguardano. \\
+    2. Tali dati devono essere trattati secondo il principio di lealtà, per finalità determinate e in base al consenso della persona interessata o a un altro fondamento legittimo previsto dalla legge.''
+  \end{block}
+  
+  \vspace{0.2cm}
+  
+  \begin{block}{Art. 8 CEDU -- Diritto al rispetto della vita privata e familiare}
+    \small
+    ``1. Ogni persona ha diritto al rispetto della propria vita privata e familiare, del proprio domicilio e della propria corrispondenza.''
   \end{block}
 \end{frame}
 
 % ------------------------------------------------------------
-% SLIDE 3: LA CLASSIFICAZIONE DEI DATI
+% SLIDE 3: DATO PERSONALE (Art. 4, n. 1 GDPR)
 % ------------------------------------------------------------
-\begin{frame}{La classificazione dei dati personali}
-  \begin{itemize}
-    \item \textbf{Dati personali ordinari} (Art. 4, n. 1 GDPR): Qualsiasi informazione riguardante una persona fisica identificata o identificabile.
-    \item \textbf{Dati particolari / sensibili} (Art. 9 GDPR): Oggetto di tutela rafforzata e di un \textbf{divieto generale di trattamento} (salvo consenso esplicito ex par. 2, lett. a).
-  \end{itemize}
+\begin{frame}{Definizione di Dato Personale}
+  \begin{block}{Art. 4, n. 1 GDPR -- Nozione di dato personale}
+    \small
+    ``«dato personale»: qualsiasi informazione riguardante una persona fisica identificata o identificabile («interessato»); si considera identificabile la persona fisica che può essere identificata, direttamente o indirettamente...''
+  \end{block}
+\end{frame}
 
-  \begin{block}{Art. 9, par. 1 GDPR -- Categorie particolari di dati}
+% ------------------------------------------------------------
+% SLIDE 4: CATEGORIE PARTICOLARI DI DATI (Art. 9 GDPR)
+% ------------------------------------------------------------
+\begin{frame}{Categorie Particolari di Dati}
+  \begin{block}{Art. 9, par. 1 GDPR -- Trattamento di categorie particolari di dati personali}
     \small
     ``È vietato trattare dati personali che rivelino l'origine razziale o etnica, le opinioni politiche, le convinzioni religiose o filosofiche, o l'appartenenza sindacale, nonché trattare dati genetici, dati biometrici intesi ad identificare in modo univoco una persona fisica, dati relativi alla salute o alla vita sessuale o all'orientamento sessuale della persona.''
   \end{block}
 \end{frame}
 
 % ------------------------------------------------------------
-% SLIDE 4: I PRINCIPI DEL TRATTAMENTO
+% SLIDE 5: PRINCIPI DEL TRATTAMENTO (Art. 5 GDPR)
 % ------------------------------------------------------------
-\begin{frame}{I Principi del Trattamento (Art. 5 GDPR)}
-  I moduli web devono essere progettati nel rispetto di 6 principi cardine:
-  \begin{columns}[T]
-    \begin{column}{0.48\textwidth}
-      \begin{itemize}
-        \item \textbf{Liceità, correttezza e trasparenza}: Raccolta basata su presupposti legali chiari.
-        \item \textbf{Limitazione della finalità}: Utilizzo vincolato esclusivamente agli scopi dichiarati.
-        \item \textbf{Minimizzazione dei dati}: Richiesta dei soli dati strettamente necessari.
-      \end{itemize}
-    \end{column}
-    \begin{column}{0.48\textwidth}
-      \begin{itemize}
-        \item \textbf{Esattezza}: Dati corretti e costantemente aggiornati.
-        \item \textbf{Limitazione della conservazione}: Conservazione limitata al tempo necessario.
-        \item \textbf{Integrità e riservatezza}: Protezione tecnica mediante protocollo HTTPS/TLS.
-      \end{itemize}
-    \end{column}
-  \end{columns}
+\begin{frame}{I Principi del Trattamento}
+  \begin{block}{Art. 5, par. 1 GDPR -- Principi applicabili al trattamento dei dati personali}
+    \small
+    I dati personali sono:
+    \begin{itemize}
+      \item a) trattati in modo lecito, corretto e trasparente;
+      \item b) raccolti per finalità determinate, esplicite e legittime;
+      \item c) adeguati, pertinenti e limitati a quanto necessario (minimizzazione);
+      \item d) esatti e, se necessario, aggiornati;
+      \item e) conservati per un arco di tempo non superiore al conseguimento delle finalità;
+      \item f) trattati in modo da garantire un'adeguata sicurezza (integrità e riservatezza).
+    \end{itemize}
+  \end{block}
 \end{frame}
 
 % ------------------------------------------------------------
-% SLIDE 5: PROFILI CIVILI: INFORMATIVA E CONSENSO
+% SLIDE 6: LICEITÀ DEL TRATTAMENTO (Art. 6 GDPR)
 % ------------------------------------------------------------
-\begin{frame}{Profili Civili: Informativa e Consenso}
-  \begin{itemize}
-    \item \textbf{Obbligo di informativa} (Art. 13 GDPR): Deve essere concisa, trasparente, intellegibile e facilmente accessibile dall'utente prima dell'invio.
-    \item \textbf{Il consenso} (Art. 7 GDPR), quando richiesto, deve essere:
-      \begin{itemize}
-        \item \textbf{Libero}: Non condizionato all'erogazione del servizio principale.
-        \item \textbf{Specifico}: Granulare e distinto per singola finalità.
-        \item \textbf{Informato}: Riferito a un'adeguata informativa.
-        \item \textbf{Inequivocabile}: Non derivante da caselle pre-spuntate (\emph{pre-ticked boxes}).
-      \end{itemize}
-  \end{itemize}
+\begin{frame}{Liceità del Trattamento}
+  \begin{block}{Art. 6, par. 1 GDPR -- Condizioni di liceità del trattamento (sintesi)}
+    \small
+    Il trattamento è lecito solo se ricorre almeno una delle seguenti condizioni:
+    \begin{itemize}
+      \item a) l'interessato ha espresso il consenso al trattamento dei propri dati;
+      \item b) il trattamento è necessario all'esecuzione di un contratto;
+      \item c) il trattamento è necessario per adempiere un obbligo legale;
+      \item d) il trattamento è necessario per la salvaguardia degli interessi vitali;
+      \item e) il trattamento è necessario per l'esecuzione di un compito di interesse pubblico;
+      \item f) il trattamento è necessario per il legittimo interesse del titolare.
+    \end{itemize}
+  \end{block}
 \end{frame}
 
 % ------------------------------------------------------------
-% SLIDE 6: RESPONSABILITÀ CIVILE E RISARCIMENTO
+% SLIDE 7: L'OBBLIGO DI INFORMATIVA (Art. 13 GDPR)
 % ------------------------------------------------------------
-\begin{frame}{Responsabilità Civile e Risarcimento}
-  \begin{itemize}
-    \item \textbf{Diritto al risarcimento} (Art. 82 GDPR): Copre sia i danni materiali che quelli immateriali (compresa la perdita di controllo sui dati).
-    \item \textbf{Inversione dell'onere della prova}: Il titolare del trattamento deve dimostrare che il danno non gli è in alcun modo imputabile.
-  \end{itemize}
+\begin{frame}{L'Obbligo di Informativa}
+  \begin{block}{Art. 13 GDPR -- Informazioni da fornire qualora i dati siano raccolti presso l'interessato}
+    \small
+    Il titolare del trattamento, nel momento in cui ottiene i dati, fornisce all'interessato:
+    \begin{itemize}
+      \item L'identità e i dati di contatto del titolare del trattamento;
+      \item Le finalità del trattamento cui sono destinati i dati e la base giuridica;
+      \item I destinatari o le categorie di destinatari dei dati personali;
+      \item Il periodo di conservazione dei dati personali o i criteri per determinarlo;
+      \item I diritti dell'interessato (accesso, rettifica, cancellazione, limitazione, opposizione).
+    \end{itemize}
+  \end{block}
+\end{frame}
 
-  \begin{block}{Art. 82, par. 1 GDPR -- Diritto al risarcimento}
+% ------------------------------------------------------------
+% SLIDE 8: IL CONSENSO (Art. 7 GDPR)
+% ------------------------------------------------------------
+\begin{frame}{Il Consenso dell'Interessato}
+  \begin{block}{Art. 7 GDPR -- Condizioni per il consenso}
+    \small
+    \begin{itemize}
+      \item \textbf{Par. 1}: Il titolare del trattamento deve essere in grado di dimostrare che l'interessato ha prestato il consenso al trattamento dei propri dati.
+      \item \textbf{Par. 2}: Se il consenso è prestato nel contesto di una dichiarazione scritta, la richiesta di consenso è presentata in modo chiaramente distinguibile.
+      \item \textbf{Par. 3}: L'interessato ha il diritto di revocare il proprio consenso in qualsiasi momento.
+      \item \textbf{Par. 4}: Nel valutare se il consenso sia stato liberamente prestato, si tiene in considerazione se l'esecuzione di un contratto sia condizionata alla prestazione del consenso.
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+% ------------------------------------------------------------
+% SLIDE 9: DIRITTO AL RISARCIMENTO (Art. 82 GDPR)
+% ------------------------------------------------------------
+\begin{frame}{Diritto al Risarcimento}
+  \begin{block}{Art. 82, par. 1 GDPR -- Diritto al risarcimento e responsabilità}
     \small
     ``Chiunque subisca un danno materiale o immateriale causato da una violazione del presente regolamento ha il diritto di ottenere il risarcimento del danno dal titolare del trattamento o dal responsabile del trattamento.''
   \end{block}
 \end{frame}
 
 % ------------------------------------------------------------
-% SLIDE 7: I REATI PENALI (Codice della Privacy)
+% SLIDE 10: SANZIONI AMMINISTRATIVE (Art. 83 GDPR)
 % ------------------------------------------------------------
-\begin{frame}{I Reati Penali (Codice della Privacy)}
-  La tutela penale interviene sulle condotte a maggior coefficiente di offensività:
-  
-  \begin{itemize}
-    \item \textbf{Art. 167 -- Trattamento illecito di dati}:
-      \begin{itemize}
-        \item Fine di profitto/danno + nocumento. Reclusione da 6 mesi a 1 anno e 6 mesi (da 1 a 3 anni per dati sensibili).
-      \end{itemize}
-    \item \textbf{Art. 167-bis -- Comunicazione e diffusione illecita su larga scala}:
-      \begin{itemize}
-        \item Condivisione o leak deliberato di interi database di utenti. Reclusione da 1 a 6 anni.
-      \end{itemize}
-    \item \textbf{Art. 167-ter -- Acquisizione fraudolenta su larga scala}:
-      \begin{itemize}
-        \item Raccolta tramite phishing, hackeraggio o \emph{dark patterns}. Reclusione da 1 a 4 anni.
-      \end{itemize}
-  \end{itemize}
+\begin{frame}{Sanzioni Amministrative}
+  \begin{block}{Art. 83 GDPR -- Condizioni generali per infliggere sanzioni pecuniarie}
+    \small
+    A seconda dei casi, le sanzioni amministrative pecuniarie possono raggiungere:
+    \begin{itemize}
+      \item \textbf{Fino a 10 000 000 EUR} o il \textbf{2\% del fatturato} mondiale annuo per violazioni degli obblighi del titolare (es. condizioni del consenso, mancata informativa).
+      \item \textbf{Fino a 20 000 000 EUR} o il \textbf{4\% del fatturato} mondiale annuo per violazioni dei principi di base e dei diritti degli interessati.
+    \end{itemize}
+  \end{block}
 \end{frame}
 
 % ------------------------------------------------------------
-% SLIDE 8: CASI PRATICI E GIURISPRUDENZA
+% SLIDE 11: I REATI PENALI: TRATTAMENTO ILLECITO (Art. 167)
 % ------------------------------------------------------------
-\begin{frame}{Casi Pratici e Giurisprudenza}
-  \begin{itemize}
-    \item \textbf{Garante Privacy (Provv. 2021)}: Sanzione a ente pubblico per form di contatto sprovvisto di informativa ex Art. 13 GDPR.
-    \item \textbf{Garante Privacy (Provv. 2022)}: Sanzione per form di reclutamento contenente campi sulla salute senza consenso ex Art. 9 GDPR.
-    \item \textbf{Cass. Penale n. 1285/2019}: Condanna ex Art. 167 per cessione illecita di database di utenti a scopi commerciali (il profitto può essere indiretto).
-    \item \textbf{Cass. Civile n. 407/2023}: Risarcimento del danno non patrimoniale per violazione del GDPR. La perdita di controllo sui dati è fonte di danno risarcibile.
-  \end{itemize}
+\begin{frame}{I Reati Penali: Trattamento Illecito}
+  \begin{block}{Art. 167 D.Lgs. 196/2003 -- Trattamento illecito di dati}
+    \small
+    ``1. Salvo che il fatto costituisca più grave reato, chiunque, al fine di trarne per sé o per altri profitto ovvero al fine di recare ad altri un danno, procede al trattamento [...] è punito, se dal fatto deriva nocumento, con la reclusione da sei mesi a un anno e sei mesi. \\
+    2. Se il fatto [...] riguarda dati genetici, biometrici o relativi alla salute, alla vita sessuale, all'orientamento sessuale o alle opinioni, [...] la pena è la reclusione da uno a tre anni.''
+  \end{block}
 \end{frame}
 
 % ------------------------------------------------------------
-% SLIDE 9: CHECKLIST DI CONFORMITÀ
+% SLIDE 12: I REATI PENALI: COMUNICAZIONE E DIFFUSIONE (Art. 167-bis)
 % ------------------------------------------------------------
-\begin{frame}{Checklist di Conformità per i Form Web}
-  \begin{columns}[T]
-    \begin{column}{0.48\textwidth}
-      \begin{itemize}
-        \item \textbf{1. Trasparenza}: Informativa completa ex Art. 13 GDPR sempre accessibile.
-        \item \textbf{2. Base giuridica}: Definita per ogni finalità di trattamento.
-        \item \textbf{3. Minimizzazione}: Richiedere solo i dati strettamente indispensabili.
-      \end{itemize}
-    \end{column}
-    \begin{column}{0.48\textwidth}
-      \begin{itemize}
-        \item \textbf{4. Consenso granulare}: Checkbox separate e non pre-selezionate.
-        \item \textbf{5. Sicurezza tecnica}: Obbligo di protocollo HTTPS/TLS e cifratura dati.
-        \item \textbf{6. Gestione dati sensibili}: Consenso esplicito ed elevati standard di sicurezza.
-      \end{itemize}
-    \end{column}
-  \end{columns}
+\begin{frame}{I Reati Penali: Comunicazione e Diffusione}
+  \begin{block}{Art. 167-bis D.Lgs. 196/2003 -- Comunicazione e diffusione illecita su larga scala}
+    \small
+    ``1. Salvo che il fatto costituisca più grave reato, chiunque comunica o diffonde, al fine di trarne profitto per sé o altri ovvero al fine di arrecare danno, un archivio automatizzato o una parte sostanziale di esso contenente dati personali oggetto di trattamento su larga scala [...] è punito con la reclusione da uno a sei anni.''
+  \end{block}
+\end{frame}
+
+% ------------------------------------------------------------
+% SLIDE 13: I REATI PENALI: ACQUISIZIONE FRAUDOLENTA (Art. 167-ter)
+% ------------------------------------------------------------
+\begin{frame}{I Reati Penali: Acquisizione Fraudolenta}
+  \begin{block}{Art. 167-ter D.Lgs. 196/2003 -- Acquisizione fraudolenta di dati su larga scala}
+    \small
+    ``1. Salvo che il fatto costituisca più grave reato, chiunque, al fine di trarne profitto per sé o altri ovvero di arrecare danno, acquisisca con mezzi fraudolenti un archivio automatizzato o una parte sostanziale di esso contenente dati personali oggetto di trattamento su larga scala è punito con la reclusione da uno a quattro anni.''
+  \end{block}
 \end{frame}
 
 \end{document}

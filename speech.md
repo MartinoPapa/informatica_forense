@@ -8,12 +8,12 @@
 ## Slide 1: Titolo (0:00 - 0:45)
 - **Cosa dire:** 
   Benvenuti. L'era digitale ha radicalmente mutato le modalità di contatto tra enti e utenti. L'utilizzo di *form* online è diventato una prassi ordinaria in ogni settore, consentendo di acquisire una mole considerevole di dati con semplicità e a costo pressoché nullo.
-  Tuttavia, proprio questa facilità di accesso rappresenta il principale fattore di rischio. Se un modulo web viene predisposto senza le adeguate cautele o senza basi giuridiche, si realizzano le condizioni per una pluralità di illeciti amministrativi e penali. Oggi vedremo i profili giuridici che regolano la materia, seguendo il Regolamento UE (GDPR) e il Codice della Privacy.
+  Tuttavia, proprio questa facilità di accesso rappresenta il principale fattore di rischio. Se un modulo web viene predisposto senza le adeguate cautele o senza basi giuridiche, si realizzano le condizioni per una pluralità di illeciti amministrativi e penali. Oggi vedremo i profili giuridici che regolano la materia, seguendo il Regolamento UE (Unione Europea), noto anche come GDPR (General Data Protection Regulation - Regolamento Generale sulla Protezione dei Dati) e il Codice della Privacy.
 
 ## Slide 2: Diritti Fondamentali (0:45 - 1:30)
 - **Cosa dire:** 
   Perché proteggiamo i dati? Nell'epoca attuale, i dati veicolano la nostra immagine nella rete. Come rileva la dottrina (Pietropaoli, 2022), la tutela dei dati personali non è soltanto espressione del diritto alla riservatezza, ma è una vera e propria espressione del diritto all'autodeterminazione informativa.
-  A livello di diritti fondamentali, vengono in rilievo due norme cruciali: l'art. 8 della Carta dei Diritti Fondamentali dell'Unione Europea e l'art. 8 della Convenzione Europea dei Diritti dell'Uomo (CEDU).
+  A livello di diritti fondamentali, vengono in rilievo due norme cruciali: l'art. 8 della Carta dei Diritti Fondamentali dell'Unione Europea e l'art. 8 della CEDU, acronimo che sta per Convenzione Europea dei Diritti dell'Uomo.
 
 ## Slide 3: Il Dato Personale (Art. 4, n. 1 GDPR) (1:30 - 2:15)
 - **Cosa dire:** 
@@ -34,7 +34,7 @@
   3. *Minimizzazione dei dati*: occorre raccogliere soltanto dati adeguati, pertinenti e limitati; qualsiasi campo superfluo integra una violazione.
   4. *Esattezza*: il titolare deve garantire la correttezza dei dati.
   5. *Limitazione della conservazione*: i dati non vanno conservati oltre il tempo necessario.
-  6. *Integrità e riservatezza*: il form deve essere tecnicamente protetto tramite connessioni cifrate come il protocollo HTTPS/TLS.
+  6. *Integrità e riservatezza*: il form deve essere tecnicamente protetto tramite connessioni cifrate come il protocollo HTTPS (Hypertext Transfer Protocol Secure) basato su TLS (Transport Layer Security).
 
 ## Slide 6: L'Obbligo di Informativa (Art. 13 GDPR) (4:15 - 5:15)
 - **Cosa dire:** 
@@ -62,7 +62,7 @@
 ## Slide 10: Reati Penali - Trattamento Illecito (Art. 167) (7:45 - 8:30)
 - **Cosa dire:** 
   Le condotte a maggior coefficiente di offensività trovano tutela penale nel Codice della Privacy.
-  L'art. 167 punisce il trattamento illecito di dati. Per configurarsi serve il fine di profitto o danno, dal quale deve derivare un effettivo nocumento. Le pene vanno da sei mesi a un anno e mezzo di reclusione, e aumentano da uno a tre anni se riguardano dati sensibili.
+  L'art. 167 punisce il trattamento illecito di dati. Per configurarsi serve il fine di profitto o danno, dal quale deve derivare un effettivo nocumento. Le pene vanno da sei mesi a un anno e mezzo di reclusione, e aumentano da uno a tre anni se riguardano dati sensibili (ai sensi del D.Lgs. 196/2003, ossia il Decreto Legislativo).
   *Caso pratico:* La Cassazione penale (sent. 1285/2019) ha confermato il reato in capo a un operatore che raccoglieva dati tramite web per cederli a terzi a fini commerciali. La Corte ha precisato che il "fine di profitto" è integrato anche dalla sola prospettiva di un vantaggio economico indiretto, e che il nocumento può consistere in un danno morale.
 
 ## Slide 11: Reati Penali - Comunicazione e Diffusione (Art. 167-bis) (8:30 - 9:15)

@@ -1,0 +1,353 @@
+\documentclass[aspectratio=169]{beamer}
+
+% ============================================================
+% PACCHETTI
+% ============================================================
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\usepackage{lmodern}
+\usepackage{tcolorbox}
+\usepackage{xcolor}
+
+% ============================================================
+% TEMA E COLORI
+% ============================================================
+\usetheme{Madrid}
+
+\definecolor{legaleblue}{RGB}{20,52,100}
+\definecolor{legalelightblue}{RGB}{220,232,246}
+\definecolor{legalegray}{RGB}{90,90,90}
+\definecolor{legalered}{RGB}{150,30,30}
+
+\setbeamercolor{palette primary}{bg=legaleblue, fg=white}
+\setbeamercolor{palette secondary}{bg=legaleblue!80, fg=white}
+\setbeamercolor{palette tertiary}{bg=legaleblue!60, fg=white}
+\setbeamercolor{palette quaternary}{bg=legaleblue!40, fg=white}
+\setbeamercolor{structure}{fg=legaleblue}
+\setbeamercolor{title}{fg=white, bg=legaleblue}
+\setbeamercolor{frametitle}{fg=white, bg=legaleblue}
+\setbeamercolor{block title}{fg=white, bg=legaleblue}
+\setbeamercolor{block body}{fg=black, bg=legalelightblue}
+\setbeamercolor{alerted text}{fg=legalered}
+
+\setbeamerfont{title}{size=\Large, series=\bfseries}
+\setbeamerfont{frametitle}{size=\normalsize, series=\bfseries}
+
+% ============================================================
+% BOX NORMA (tcolorbox)
+% ============================================================
+\tcbuselibrary{skins, breakable}
+
+\newtcolorbox{normabox}[1][]{%
+  colback=legalelightblue,
+  colframe=legaleblue,
+  fonttitle=\small\bfseries,
+  title={#1},
+  breakable,
+  left=4pt, right=4pt, top=4pt, bottom=4pt,
+  boxrule=0.8pt
+}
+
+\newtcolorbox{sentenzabox}[1][]{%
+  colback=gray!10,
+  colframe=legalegray,
+  fonttitle=\small\bfseries\color{legalegray},
+  title={#1},
+  breakable,
+  left=4pt, right=4pt, top=4pt, bottom=4pt,
+  boxrule=0.8pt
+}
+
+% ============================================================
+% METADATI
+% ============================================================
+\title{La raccolta illecita di dati tramite \emph{form} online}
+\subtitle{Profili giuridici e tecnici della raccolta di dati personali\\mediante moduli web inadeguatamente predisposti}
+\author{Martino Papa \and Alessio Minati}
+\institute{Università degli Studi di Firenze\\Corso di Informatica Forense}
+\date{Anno Accademico 2025/2026}
+
+% ============================================================
+% DOCUMENTO
+% ============================================================
+\begin{document}
+
+% ------------------------------------------------------------
+% SLIDE 1 – TITOLO
+% ------------------------------------------------------------
+\begin{frame}
+  \titlepage
+\end{frame}
+
+% ------------------------------------------------------------
+% SLIDE 2 – RIFERIMENTI NORMATIVI
+% ------------------------------------------------------------
+\begin{frame}{Riferimenti normativi}
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      \textbf{\color{legaleblue}Normativa di rango primario}
+      \begin{itemize}
+        \item \textbf{Reg. (UE) 2016/679} -- GDPR
+        \item \textbf{D.Lgs. 196/2003} -- Codice Privacy
+        \item \textbf{D.Lgs. 101/2018} -- Adeguamento al GDPR
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \textbf{\color{legaleblue}Diritti fondamentali}
+      \begin{itemize}
+        \item \textbf{Art. 8} Carta dei Diritti Fondamentali UE (CDFUE)
+        \item \textbf{Art. 8} CEDU -- Convenzione Europea dei Diritti dell'Uomo
+      \end{itemize}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% ------------------------------------------------------------
+% SLIDE 3 – DATI PARTICOLARI
+% ------------------------------------------------------------
+\begin{frame}{Dati personali e dati particolari}
+
+  \begin{normabox}[Art.~4, n.~1 GDPR -- Definizione di dato personale]
+    \small
+    ``\textbf{dato personale}'': qualsiasi informazione riguardante una persona fisica identificata o identificabile.
+  \end{normabox}
+
+  \vspace{0.3cm}
+
+  \begin{normabox}[Art.~9 GDPR -- Trattamento di categorie particolari di dati personali ]
+    \small
+    \textbf{Par. 1}: ``È vietato trattare dati personali che rivelino l'origine
+    razziale o etnica, le opinioni politiche, le convinzioni religiose o filosofiche,
+    o l'appartenenza sindacale, nonché trattare dati genetici, dati biometrici intesi
+    ad identificare in modo univoco una persona fisica, dati relativi alla salute o
+    alla vita sessuale o all'orientamento sessuale della persona.''\\[0.3em]
+    \textbf{Par. 2}: Il divieto non si applica nei casi ivi tassativamente previsti,
+    tra cui il \emph{consenso esplicito} dell'interessato (lett.~a).
+  \end{normabox}
+
+\end{frame}
+
+% ------------------------------------------------------------
+% SLIDE 4 – NORME PER LA CREAZIONE DI FORM ONLINE
+% ------------------------------------------------------------
+\begin{frame}{Norme per la creazione di \emph{form} online}
+  \textbf{Art. 5 GDPR} -- Principi applicabili al trattamento dei dati personali
+
+  \vspace{0.2cm}
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      \begin{itemize}
+        \item[a)] \textbf{Liceità, correttezza e trasparenza}
+        \item[b)] \textbf{Limitazione della finalità}
+        \item[c)] \textbf{Minimizzazione dei dati}
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \begin{itemize}
+        \item[d)] \textbf{Esattezza}
+        \item[e)] \textbf{Limitazione della conservazione}
+        \item[f)] \textbf{Integrità e riservatezza}
+      \end{itemize}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% ------------------------------------------------------------
+% SLIDE 5 – OBBLIGO DI INFORMATIVA E CONSENSO
+% ------------------------------------------------------------
+\begin{frame}{Obbligo di informativa e consenso}
+
+  \textbf{Art. 13 GDPR} -- Obbligo di informativa al momento della raccolta dati
+
+  \vspace{0.3cm}
+  \textbf{Art. 7 GDPR} -- Il consenso deve essere:
+
+  \vspace{0.2cm}
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      \begin{itemize}
+        \item[\textbf{1.}] \textbf{Libero}
+        \item[\textbf{2.}] \textbf{Specifico}
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \begin{itemize}
+        \item[\textbf{3.}] \textbf{Informato}
+        \item[\textbf{4.}] \textbf{Inequivocabile}
+      \end{itemize}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% ------------------------------------------------------------
+% SLIDE 6 – RESPONSABILITÀ CIVILE (ART. 82)
+% ------------------------------------------------------------
+\begin{frame}{Responsabilità civile del titolare -- Art. 82 GDPR}
+
+  \begin{block}{Principio: presunzione di responsabilità}
+    L'art.~82 GDPR sancisce il diritto di ogni interessato che abbia subito un danno --- materiale o immateriale --- in conseguenza di una violazione del Regolamento, di ottenere il \textbf{risarcimento} dal titolare o dal responsabile del trattamento.
+  \end{block}
+
+  \vspace{0.4cm}
+  \begin{alertblock}{Onere della prova invertito}
+    Il titolare è esonerato da responsabilità \textbf{soltanto se dimostra} che l'evento dannoso non gli è in alcun modo imputabile.\\[0.3em]
+    \small \emph{$\Rightarrow$ Si tratta di una presunzione di responsabilità con onere della prova a carico del titolare.}
+  \end{alertblock}
+
+\end{frame}
+
+% ------------------------------------------------------------
+% SLIDE 7 – SANZIONI AMMINISTRATIVE (ART. 83)
+% ------------------------------------------------------------
+\begin{frame}{Sanzioni amministrative -- Art. 83 GDPR}
+  \vspace{0.3cm}
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      \begin{block}{Sanzione ordinaria (par. 4)}
+        \centering
+        \textbf{fino a 10 milioni €}\\
+        oppure\\
+        \textbf{2\% del fatturato mondiale}\\[0.2em]
+        \small (es. violazione del consenso, mancata informativa)
+      \end{block}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \begin{alertblock}{Sanzione aggravata (par. 5)}
+        \centering
+        \textbf{fino a 20 milioni €}\\
+        oppure\\
+        \textbf{4\% del fatturato mondiale}\\[0.2em]
+        \small (es. violazione dei principi base, trattamento di dati particolari senza base giuridica)
+      \end{alertblock}
+    \end{column}
+  \end{columns}
+
+\end{frame}
+
+% ------------------------------------------------------------
+% SLIDE 8 – PROFILO PENALISTICO: ART. 167
+% ------------------------------------------------------------
+\begin{frame}{Profilo penalistico -- Trattamento illecito di dati}
+
+  \begin{normabox}[Art.~167 D.Lgs. 196/2003]
+    \small
+    ``1. Salvo che il fatto costituisca più grave reato, chiunque, al fine di
+    trarne per sé o per altri profitto ovvero al fine di recare ad altri un danno,
+    procede al trattamento di dati personali in violazione di quanto disposto
+    [\ldots] è punito, se dal fatto deriva nocumento, con la \textbf{reclusione da sei
+    mesi a un anno e sei mesi}.\\[0.3em]
+    2. Se il fatto di cui al comma 1 riguarda dati
+    genetici, biometrici o relativi alla salute, alla vita sessuale, all'orientamento
+    sessuale o alle opinioni, [\ldots] la pena è la \textbf{reclusione da uno a tre anni}.''
+  \end{normabox}
+
+  \vspace{0.2cm}
+  Il danno e il profitto possono essere anche di natura non economica
+
+
+\end{frame}
+
+% ------------------------------------------------------------
+% SLIDE 9 – PROFILO PENALISTICO: ART. 167-BIS
+% ------------------------------------------------------------
+\begin{frame}{Profilo penalistico -- Comunicazione e diffusione illecita su larga scala}
+
+  \begin{normabox}[Art.~167-bis D.Lgs. 196/2003]
+    \small
+    ``1. Salvo che il fatto costituisca più grave reato, chiunque comunica o diffonde,
+    al fine di trarne profitto per sé o altri ovvero al fine di arrecare danno, un
+    archivio automatizzato o una parte sostanziale di esso contenente dati personali
+    oggetto di trattamento su larga scala, in violazione degli articoli 2-ter, 2-sexies
+    e 2-octies, è punito con la \textbf{reclusione da uno a sei anni}.''
+  \end{normabox}
+
+  \vspace{0.3cm}
+  Si applica in caso di \textbf{data breach deliberato}: cessione o pubblicazione non autorizzata di dati raccolti tramite \emph{form}
+
+
+\end{frame}
+
+% ------------------------------------------------------------
+% SLIDE 10 – PROFILO PENALISTICO: ART. 167-TER
+% ------------------------------------------------------------
+\begin{frame}{Profilo penalistico -- Acquisizione fraudolenta su larga scala}
+
+  \begin{normabox}[Art.~167-ter D.Lgs. 196/2003]
+    \small
+    ``1. Salvo che il fatto costituisca più grave reato, chiunque, al fine di trarne
+    profitto per sé o altri ovvero di arrecare danno, acquisisca con mezzi
+    fraudolenti un archivio automatizzato o una parte sostanziale di esso contenente
+    dati personali oggetto di trattamento su larga scala è punito con la \textbf{reclusione
+    da uno a quattro anni}.''
+  \end{normabox}
+
+  \vspace{0.3cm}
+  Riguarda in particolare i \emph{form} ingannevoli (\textbf{dark patterns}) i quali inducono l'utente a fornire dati senza esserne \textbf{pienamente consapevole}
+
+\end{frame}
+
+% ------------------------------------------------------------
+% SLIDE 11 – CASO PRATICO AMMINISTRATIVO
+% ------------------------------------------------------------
+\begin{frame}{Caso pratico -- Profilo amministrativo}
+
+  \begin{sentenzabox}[Garante per la protezione dei dati personali, Provv. 29 aprile 2021 -- Fonte: Garante Privacy, Newsletter n.~487]
+    \small
+    Un ente pubblico aveva predisposto sul proprio sito web un modulo di
+    contatto (\emph{form}) che raccoglieva nome, cognome, indirizzo e-mail
+    e numero di telefono degli utenti, senza che nella pagina fosse presente
+    alcuna informativa adeguata ai sensi dell'art.~13 GDPR. Il Garante ha
+    accertato la violazione dei principi di liceità, correttezza e trasparenza
+    (art.~5, par.~1, lett.~a GDPR) e ha irrogato una sanzione pecuniaria
+    amministrativa, disponendo altresì la rettifica del \emph{form}.
+  \end{sentenzabox}
+
+\end{frame}
+
+% ------------------------------------------------------------
+% SLIDE 12 – CASO PRATICO PENALE
+% ------------------------------------------------------------
+\begin{frame}{Caso pratico -- Profilo penale}
+
+  \begin{sentenzabox}[Cass. pen., sez. II, 15 gennaio 2019, n.~1285]
+    \small
+    La Suprema Corte ha confermato la configurabilità del reato di cui all'art.~167
+    del Codice Privacy in capo a un operatore che aveva sistematicamente raccolto,
+    tramite un servizio web, dati personali degli utenti senza il loro consenso e li
+    aveva successivamente ceduti a terzi a fini commerciali. La Corte ha precisato
+    che il \emph{fine di profitto} richiesto dalla norma è integrato anche dalla sola
+    prospettiva di un vantaggio economico indiretto, e che il \emph{nocumento}
+    può consistere anche in un danno non patrimoniale, quale la perdita del controllo
+    sui propri dati personali.
+  \end{sentenzabox}
+
+\end{frame}
+
+% ------------------------------------------------------------
+% SLIDE 13 – GRAZIE
+% ------------------------------------------------------------
+\begin{frame}
+  \vfill
+  \begin{center}
+    {\Huge\bfseries\color{legaleblue} Grazie per l'attenzione}
+
+    \vspace{0.8cm}
+    \rule{0.6\linewidth}{0.4pt}
+
+    \vspace{0.4cm}
+    {\large Martino Papa \quad | \quad Alessio Minati}\\[0.3em]
+    {\small Università degli Studi di Firenze\\
+    Corso di Informatica Forense -- A.A. 2025/2026}
+
+    \vspace{0.8cm}
+    \rule{0.6\linewidth}{0.4pt}
+
+    \vspace{0.4cm}
+    {\small\color{legalegray} \textit{La raccolta illecita di dati tramite \emph{form} online:\\
+    profili giuridici e tecnici}}
+  \end{center}
+  \vfill
+\end{frame}
+
+\end{document}
